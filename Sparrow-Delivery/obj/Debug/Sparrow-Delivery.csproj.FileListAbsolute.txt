@@ -58,3 +58,4 @@ C:\Users\u201515078\Source\Repos\Sparrow-Delivery\Sparrow-Delivery\obj\Debug\Spa
 C:\Users\u201515078\Source\Repos\Sparrow-Delivery\Sparrow-Delivery\obj\Debug\Sparrow_Delivery.Migrations.addusuario.resources
 C:\Users\u201515078\Source\Repos\Sparrow-Delivery\Sparrow-Delivery\obj\Debug\Sparrow-Delivery.csproj.GenerateResource.Cache
 C:\Users\u201515078\Source\Repos\Sparrow-Delivery\Sparrow-Delivery\obj\Debug\Sparrow_Delivery.Migrations.addproductandcategorytables.resources
+C:\Users\u201515078\Source\Repos\Sparrow-Delivery\Sparrow-Delivery\obj\Debug\Sparrow_Delivery.Migrations.Addall.resources

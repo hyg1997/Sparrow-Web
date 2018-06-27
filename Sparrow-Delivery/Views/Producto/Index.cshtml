@@ -1,6 +1,6 @@
 ﻿@model Sparrow_Delivery.ViewModels.ViewProduct
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Productos";
 }
 
 <div class="shop-content">
@@ -38,7 +38,7 @@
                                         <h4><a href="#">@item.nombre</a></h4>
                                         <div class="product-price">S/.@item.precio</div>
                                         <div class="shop-meta text-center">
-                                            <a href="#"><i class="fa fa-shopping-cart"></i> Añadir al carro</a>
+                                            <a href="/Carrito/Agregar?ID=@item.Id"><i class="fa fa-shopping-cart"></i> Añadir al carro</a>
                                         </div>
                                     </div>
                                 </div>

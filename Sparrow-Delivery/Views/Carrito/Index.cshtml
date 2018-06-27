@@ -1,6 +1,6 @@
 ﻿@using Sparrow_Delivery.Helpers;
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Carrito Compras";
 }
 
 <section class="shop-content">
@@ -66,17 +66,34 @@
                             <tbody>
                                 <tr>
                                     <th>Subtotal del carrito</th>
-                                    <td><span class="amount">S/30.00</span></td>
+                                    @{ 
+                                        double suma = 0.00;
+                                        double costoEnvio = 10;
+                                        foreach (var item in SessionHelpers.carrito)
+                                        {
+                                            suma = suma + item.producto.precio * item.cantidad;
+                                        }
+                                    }
+                                    
+                                    <td><span class="amount">S/.@suma</span></td>
                                 </tr>
                                 <tr>
                                     <th>Envio</th>
                                     <td>
-                                        Envio gratis
+                                        @if (suma >= 50)
+                                        {
+                                            @(suma = suma+costoEnvio)
+                                            <p>Costo de envío (S/.@costoEnvio)</p>
+                                        }
+                                        else
+                                        {
+                                            <p>Envio Gratis</p>
+                                        }
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>Total a pagar</th>
-                                    <td><strong><span class="amount">S/30.00</span></strong> </td>
+                                    <td><strong><span class="amount">S/.@suma</span></strong> </td>
                                 </tr>
                             </tbody>
                         </table>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sparrow_Delivery.FilterConfig" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.RouteConfig" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.MvcApplication" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Controllers.CarritoController" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAQAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAA=</HashCode>
+      <FileName>Controllers\CarritoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Controllers.ProductoController" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProductoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Controllers.UsuarioController" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\UsuarioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Helpers.SessionHelpers" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAACACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\SessionHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Migrations.addusuario" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201806270838198_add usuario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sparrow_Delivery.Migrations.addproductandcategorytables" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201806270940273_add product and category tables.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sparrow_Delivery.Migrations.Configuration" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.Categoria" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.DetallePedido" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQBAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DetallePedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.Pedido" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAgAAAACEAAABAAAAAAAQAAAAAAAABAAI=</HashCode>
+      <FileName>Models\Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.Producto" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACCAAAAAAAAACAAAEAIAAAAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.SparrowModel" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIIEgQAAAAAAAEAAAAAAAAAEEAAAAAAA=</HashCode>
+      <FileName>Models\SparrowModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.TipoEstado" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TipoEstado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.TipoPago" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TipoPago.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.Models.Usuario" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiIAAAAAQAAACgAAAAAAAAAAEAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.ViewModels.Item" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sparrow_Delivery.ViewModels.ViewProduct" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAFAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="8.86" />
+</ClassDiagram>

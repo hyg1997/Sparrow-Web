@@ -25,6 +25,10 @@ namespace Sparrow_Delivery.Models
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Categoria> Categoria { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<DetallePedido> DetallePedido { get; set; }
+        public virtual DbSet<Pedido> Pedido { get; set; }
+        public virtual DbSet<TipoPago> TipoPago { get; set; }
+        public virtual DbSet<TipoEstado> TipoEstado { get; set; }
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
