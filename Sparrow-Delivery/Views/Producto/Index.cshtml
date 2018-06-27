@@ -1,0 +1,60 @@
+﻿@model Sparrow_Delivery.ViewModels.ViewProduct
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="shop-content">
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="side-widget">
+                    <h5>Nuestras opciones</h5>
+                    <ul class="shop-cat">
+                        @foreach (var item in Model.categorias)
+                        {
+                            <li class="@(item.ID.ToString() == Request.Params["ID"] ? "active": "")"><a href="/Producto/Index?ID=@item.ID">@item.nombre <i class="fa fa-caret-right"></i></a></li>
+                        }
+                    </ul>
+                </div>
+
+            </aside>
+            <div class="col-md-9">
+                <div class="shop-grid">
+
+                    <span>Mostrando 1-7 de 30 resultados</span>
+                </div>
+                <div class="shop-products">
+                    <div class="row">
+                        @foreach (var item in Model.productos)
+                        {
+                            if (item.estado == 1)
+                            {
+
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="@item.urlImage" alt="" />
+                                        </div>
+                                        <h4><a href="#">@item.nombre</a></h4>
+                                        <div class="product-price">S/.@item.precio</div>
+                                        <div class="shop-meta text-center">
+                                            <a href="#"><i class="fa fa-shopping-cart"></i> Añadir al carro</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <a href="./index.html" class="btn btn-default load-more">Ver más</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    li.active a {
+        color: #f9c56a;
+        font-weight: bold;
+    }
+</style>

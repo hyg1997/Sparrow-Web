@@ -1,0 +1,86 @@
+﻿@model Sparrow_Delivery.Models.Usuario
+
+@{
+    ViewBag.Title = "Registrarse";
+}
+
+<section class="shop-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row shop-login">
+                    <div class="col-md-12">
+                        <div class="box-content">
+                            <h3 class="text-center">Registrarse</h3>
+                            <br>
+                            <form class="logregform" method="post">
+                                @Html.AntiForgeryToken()
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>E-mail</label>
+                                            @Html.TextBoxFor(model => model.email, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("noDisponible", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix space20"></div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>Contraseña</label>
+                                            @Html.TextBoxFor(model => model.password, new { @class = "form-control", type = "password" })
+                                            @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Repetir contraseña</label>
+                                            @Html.TextBoxFor(model => model.confirmPassword, new { @class = "form-control", type = "password" })
+                                            @Html.ValidationMessageFor(model => model.confirmPassword, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix space20"></div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>Nombres</label>
+                                            @Html.TextBoxFor(model => model.nombre, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Apellido</label>
+                                            @Html.TextBoxFor(model => model.apellido, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.apellido, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix space20"></div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            <label>DNI</label>
+                                            @Html.TextBoxFor(model => model.DNI, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.DNI, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label>Dirección</label>
+                                            @Html.TextBoxFor(model => model.userAddress, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.userAddress, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="space20"></div>
+                                        <button type="submit" class="btn btn-default pull-right">Registrarse</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
